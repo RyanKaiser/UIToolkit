@@ -45,7 +45,7 @@ public class UIController : MonoBehaviour
 
     private void OnCloseButtonClicked(ClickEvent e)
     {
-        _bottomContainer.style.display = DisplayStyle.None;
+        // _bottomContainer.style.display = DisplayStyle.None;
         _scrim.RemoveFromClassList("scrim--fadein");
         _bottomSheet.RemoveFromClassList("bottomsheet--up");
     }
