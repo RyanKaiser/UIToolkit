@@ -2,7 +2,7 @@
     <Style src="project://database/Assets/Resources/SampleStyle.uss?fileID=7433441132597879392&amp;guid=146091607cc1e4df9b067c9196d9ade3&amp;type=3#SampleStyle" />
     <ui:VisualElement name="Container" style="flex-grow: initial; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0); min-height: auto; align-items: center; justify-content: flex-start; align-self: center; flex-shrink: initial; flex-direction: column; -unity-font-definition: url(&quot;project://database/Assets/Font/SpoqaHanSansNeo-Regular%20SDF.asset?fileID=11400000&amp;guid=91512020db20e43c596ce0499664d674&amp;type=2#SpoqaHanSansNeo-Regular SDF&quot;);">
         <ui:VisualElement name="VisualElement" style="flex-grow: 0; width: 100%; height: 50%; background-color: rgba(0, 0, 0, 0); min-height: auto; align-items: flex-end; justify-content: space-around; align-self: flex-end; flex-shrink: 1; flex-direction: row; margin-right: 0; max-width: none;">
-            <ui:VisualElement name="Image_boy" style="flex-grow: 0; background-image: resource(&apos;Hyperspace - Floating&apos;); width: 300px; height: 400px; flex-shrink: 0; justify-content: flex-end; align-self: auto; align-items: stretch;" />
+            <ui:VisualElement name="Image_Boy" class="image--boy image--boy--inair" />
             <ui:VisualElement name="Image_robot" style="flex-grow: 0; background-image: resource(&apos;Hyperspace - Robot 2&apos;); width: 300px; height: 400px; flex-shrink: 0;" />
         </ui:VisualElement>
         <ui:VisualElement name="VisualElement" style="flex-grow: initial; width: 100%; height: 50%; background-color: rgb(255, 255, 255); min-height: auto; align-items: flex-start; justify-content: space-between; align-self: auto; flex-shrink: initial; flex-direction: column; margin-right: 0; max-width: none;">
@@ -16,10 +16,10 @@
         </ui:VisualElement>
         <ui:VisualElement name="Container_Bottom" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; opacity: 1; display: flex; translate: 0 0;">
             <ui:VisualElement name="Scrim" class="scrim" style="position: absolute; width: 100%; height: 100%;" />
-            <ui:VisualElement name="BottomSheet" class="bottomsheet--default" style="transition-duration: 1s;">
+            <ui:VisualElement name="BottomSheet" class="bottomsheet--default">
                 <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" class="text--title" />
-                <ui:VisualElement name="Image_Girl" style="flex-grow: 0; background-image: resource(&apos;Hyperspace - Projector&apos;); width: 500px; height: 500px; align-items: center; justify-content: flex-start; align-self: center; -unity-background-scale-mode: stretch-to-fill;" />
-                <ui:Label tabindex="-1" text="Sed in rebus apertissimis nimium longi sumus." parse-escape-sequences="true" display-tooltip-when-elided="true" class="text--paragraph" style="align-self: center; align-items: auto; padding-top: 100px; padding-bottom: 100px;" />
+                <ui:VisualElement name="Image_Girl" class="image--girl image--girl--up" />
+                <ui:Label tabindex="-1" text="Sed in rebus apertissimis nimium longi sumus." parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label_Message" class="text--paragraph" style="align-self: center; align-items: auto; padding-top: 100px; padding-bottom: 100px;" />
                 <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button_Close" style="position: absolute; right: 50px; width: 45px; height: 45px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); color: rgba(255, 255, 255, 0); background-color: rgb(255, 255, 255); background-image: resource(&apos;close-icon&apos;); top: 50px;" />
             </ui:VisualElement>
         </ui:VisualElement>
